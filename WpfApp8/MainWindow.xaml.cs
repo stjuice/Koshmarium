@@ -74,9 +74,9 @@ namespace WpfApp8
 
         public void addCards()
         {
-            
 
             string[] a = Directory.GetFiles(Directory.GetCurrentDirectory()+("\\images\\"));
+
             //cards.AddRange(a);
            
             foreach (string name in a)
