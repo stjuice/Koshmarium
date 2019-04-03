@@ -74,7 +74,7 @@ namespace WpfApp8
 
         public void addCards()
         {
-            string[] a = Directory.GetFiles(@"D:\Кошмариум\koshmarium_nastol_naya_igra-страницы\");
+            string[] a = Directory.GetFiles(@"D:\Кошмариум\hhh\");
             //cards.AddRange(a);
            
             foreach (string name in a)
