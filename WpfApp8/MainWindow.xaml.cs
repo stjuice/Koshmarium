@@ -59,7 +59,7 @@ namespace WpfApp8
 
 
     }
-    public class 
+  //  public class 
 
     public partial class MainWindow : Window
     {   List<Card> cards = new List<Card>();//не делать глобальных переменных
@@ -67,14 +67,16 @@ namespace WpfApp8
         public MainWindow()
         {
             InitializeComponent();
-
+           // MessageBox.Show((Directory.GetCurrentDirectory()+("\\images\\")).ToString());
             addCards();
             
         }
 
         public void addCards()
         {
-            string[] a = Directory.GetFiles(@"D:\Кошмариум\hhh\");
+
+            string[] a = Directory.GetFiles(Directory.GetCurrentDirectory()+("\\images\\"));
+
             //cards.AddRange(a);
            
             foreach (string name in a)
